@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>kodeintekno</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="icon" href="img/log.png" type="image/png">
+</head>
+<body>
+
+  <nav class="bg-white shadow-md px-4 py-4 m-6 rounded-md">
+    <div class="max-w-screen-xl mx-auto flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center space-x-4">
+        <img src="img/tekno_logo.svg" alt="Logo" class="h-7" />
+      </div>
+      
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-6 font-medium">
+        <a href="#" class="text-gray-700 hover:text-red-600">Beranda</a>
+        <a href="#" class="text-gray-700 hover:text-red-600">Layanan</a>
+        <a href="#" class="text-gray-700 hover:text-red-600">Team</a>
+        <a href="#" class="text-gray-700 hover:text-red-600">Portfolio</a>
+        <a href="#" class="text-gray-700 hover:text-red-600">Testimonial</a>
+        <a href="#" class="text-gray-700 hover:text-red-600">Kontak</a>
+      </div>
+      
+      <!-- Mobile Hamburger Menu -->
+      <div class="md:hidden flex items-center">
+        <button id="menu-toggle" class="text-gray-700 focus:outline-none">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Popup Menu for Mobile -->
+    <div id="mobile-menu" class="md:hidden absolute top-16 left-1/2 transform -translate-x-1/2 w-full max-w-md bg-white shadow-md p-6 space-y-4 z-10 mx-4 rounded-xl text-center hidden">
+      <a href="#" class="text-gray-700 hover:text-red-600 block">Beranda</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 block">Layanan</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 block">Team</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 block">Portfolio</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 block">Testimonial</a>
+      <a href="#" class="text-gray-700 hover:text-red-600 block">Kontak</a>
+    </div>
+
+  </nav>
+
+  <section class="bg-white py-16 px-4">
+    <div class="max-w-screen-xl mx-auto bg-white p-8 rounded-xl shadow-lg justify-center flex flex-col items-center">
+      
+      <!-- Image Placeholder -->
+      <div class="max-w-[900px]">
+        <img src="IMG/hero.png" alt="Placeholder" class="w-full h-full object-cover rounded-xl" />
+      </div>
+
+      <!-- Text Content -->
+      <div class="bg-white flex items-center flex-col">
+        <h1 class="text-4xl md:text-5xl font-bold text-black mb-4 text-center max-w-md">
+          Creative Digital Agency
+        </h1>
+        <p class="text-lg text-gray-700 mb-8 text-center max-w-md">
+          Tempat Anda Menemukan Berbagai Solusi Digital dan Teknologi Terbaik untuk Mendukung Pertumbuhan dan Kesuksesan Bisnis Anda!
+        </p>
+        <div class="flex justify-center space-x-4">
+          <a href="#" class="bg-orange-500 text-white py-2 px-6 rounded-lg shadow-md hover:bg-orange-400 transition">
+            Kontak
+          </a>
+          <a href="#" class="bg-white border-2 border-gray-300 text-gray-700 py-2 px-6 rounded-lg shadow-md hover:bg-gray-100 transition">
+            Portfolio
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="py-16 px-4 bg-white">
+  <div class="max-w-screen-xl mx-auto flex flex-col lg:flex-row items-center">
+    <!-- Left Side: Header and Text -->
+    <div class="lg:w-1/2 text-center lg:text-left">
+      <h2 class="text-3xl font-bold text-gray-800 mb-4">Tentang Kami</h2>
+      <p class="text-lg text-gray-600 leading-relaxed">
+Kodeintekno adalah mitra strategis Anda dalam transformasi digital. Kami menghadirkan solusi-solusi inovatif yang menggabungkan kreativitas dan teknologi terkini. Dengan portofolio layanan lengkap mulai dari pengembangan website, desain grafis, hingga pemasaran digital, kami membantu bisnis Anda mencapai pertumbuhan yang signifikan dan berkelanjutan.
+      </p>
+    </div>
+    
+    <!-- Right Side: Image -->
+    <div class="lg:w-1/2 mt-8 lg:mt-0">
+      <img src="img/about.png" alt="About Image" class="w-full h-auto rounded-xl shadow-lg">
+    </div>
+  </div>
+</section>
+
+
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">Layanan Kami</h2>
+      <p class="mt-4 text-gray-600 max-w-xl mx-auto">
+        Kami menyediakan berbagai layanan digital terpadu yang dirancang untuk mendukung perkembangan bisnis Anda, mulai dari pengembangan website hingga pemasaran digital.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+      
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-pink-200 p-2 rounded-md">
+          <img src="img/uiux.png" alt="icon" class="w-[40px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">UI/UX Design</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-pink-200 p-2 rounded-md">
+          <img src="img/educenter.png" alt="icon" class="w-[40px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">Edu Center</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-pink-200 p-2 rounded-md">
+          <img src="img/content.png" alt="icon" class="w-[30px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">Content Creation</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-pink-200 p-5 rounded-md">
+        </div>
+        <div>
+          <h3 class="font-semibold">???</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-200 p-2 rounded-md">
+          <img src="img/webdev.png" alt="icon" class="w-[40px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">Web Development</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-200 p-2 rounded-md">
+          <img src="img/digma.png" alt="icon" class="w-[40px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">Digital Marketing</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-200 p-2 rounded-md">
+          <img src="img/3d.png" alt="icon" class="w-[35px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">3D Design</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+      <!-- Service Item -->
+      <div class="flex items-start gap-4">
+        <div class="bg-blue-200 p-2 rounded-md">
+          <img src="img/gd.png" alt="icon" class="w-[40px] h-6">
+        </div>
+        <div>
+          <h3 class="font-semibold">Graphic Design</h3>
+          <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">Project</h2>
+      <p class="mt-4 text-gray-600 max-w-xl mx-auto">
+        Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a.
+      </p>
+    </div>
+
+    <!-- Project Cards Container -->
+    <div class="flex flex-col items-center">
+      <div class="flex flex-wrap justify-center gap-6">
+        
+        <!-- Project Card 1 -->
+        <div class="bg-white rounded-xl shadow-sm w-[300px] p-4">
+          <div class="mb-2 text-sm font-semibold flex items-center gap-2">
+            <img src="img/Frame.png" alt="icon" />
+            01. Aviaventura
+          </div>
+          <img src="img/avi.png" alt="Project 1" class="rounded-lg" />
+        </div>
+        <!-- Project Card 2-->
+        <div class="bg-white rounded-xl shadow-sm w-[300px] p-4">
+          <div class="mb-2 text-sm font-semibold flex items-center gap-2">
+            <img src="img/Frame.png" alt="icon" />
+            02. Al-wildan
+          </div>
+          <img src="img/wil.png" alt="Project 1" class="rounded-lg" />
+        </div>
+
+                <div class="bg-white rounded-xl shadow-sm w-[300px] p-4">
+          <div class="mb-2 text-sm font-semibold flex items-center gap-2">
+            <img src="img/Frame.png" alt="icon" />
+            03.???
+          </div>
+          <img src="img/emp.png" alt="Project 1" class="rounded-lg" />
+        </div>
+      </div>
+
+      <!-- Navigation Controls -->
+      <div class="flex items-center gap-4 mt-8">
+        <button class="p-2 rounded-full border hover:bg-gray-100">
+          ←
+        </button>
+        <div class="flex items-center gap-2">
+          <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+          <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+        </div>
+        <button class="p-2 rounded-full border hover:bg-gray-100">
+          →
+        </button>
+      </div>
+    </div>
+  </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold">Testimonial</h2>
+      <p class="mt-4 text-gray-600 max-w-xl mx-auto">
+        Lorem ipsum dolor sit amet consectetur. Condimentum eget vitae ligula sed urna sit sagittis interdum a.
+      </p>
+    </div>
+
+    <!-- Testimonial Cards -->
+    <div class="flex flex-wrap justify-center gap-6">
+      
+      <!-- Testimonial Item -->
+      <div class="w-[250px] text-center">
+        <div class="flex justify-center mb-2">
+          <!-- Stars -->
+          <div class="flex space-x-1 bg-orange-100 px-2 py-1 rounded">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque</p>
+        <p class="mt-4 font-semibold">~ Fulan b</p>
+      </div>
+
+      <!-- Repeat 3 more testimonials -->
+      <div class="w-[250px] text-center">
+        <div class="flex justify-center mb-2">
+          <div class="flex space-x-1 bg-orange-100 px-2 py-1 rounded">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque</p>
+        <p class="mt-4 font-semibold">~ Fulan b</p>
+      </div>
+
+      <div class="w-[250px] text-center">
+        <div class="flex justify-center mb-2">
+          <div class="flex space-x-1 bg-orange-100 px-2 py-1 rounded">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque</p>
+        <p class="mt-4 font-semibold">~ Fulan b</p>
+      </div>
+
+      <div class="w-[250px] text-center">
+        <div class="flex justify-center mb-2">
+          <div class="flex space-x-1 bg-orange-100 px-2 py-1 rounded">
+            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+          </div>
+        </div>
+        <p class="text-sm text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum scelerisque</p>
+        <p class="mt-4 font-semibold">~ Fulan b</p>
+      </div>
+
+    </div>
+
+    <!-- Slider Controls -->
+    <div class="flex items-center justify-center mt-10 gap-4">
+      <button class="p-2 rounded-md border hover:bg-gray-100">←</button>
+      <div class="flex items-center gap-2">
+        <div class="w-2 h-2 rounded-full bg-gray-400"></div>
+        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+        <div class="w-2 h-2 rounded-full bg-gray-300"></div>
+      </div>
+      <button class="p-2 rounded-md border hover:bg-gray-100">→</button>
+    </div>
+  </section>
+
+    <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="flex flex-col md:flex-row items-start gap-12">
+      
+      <!-- Left Text Content -->
+      <div class="md:w-1/2">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4">Hubungi Kami</h2>
+        <p class="text-gray-700 mb-2">Punya ide yang ingin diwujudkan?</p>
+        <p class="text-gray-600">
+          Kami siap bantu dalam UI/UX Design, Web Development, Digital Marketing, hingga 3D & Graphic Design. <br />
+          Hubungi kami sekarang dan mari mulai kolaborasi untuk membuat sesuatu yang luar biasa.
+        </p>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="md:w-1/2 w-full bg-white p-6 rounded-lg shadow-sm">
+        <form class="space-y-4">
+          <!-- Name & Email -->
+          <div class="flex flex-col md:flex-row gap-4">
+            <div class="w-full">
+              <label class="flex items-center gap-2 font-semibold text-sm mb-1">
+                <span class="bg-pink-200 p-1 rounded">
+                  <img src="img/name.png" alt="icon" />
+                </span>
+                Nama
+              </label>
+              <input type="text" placeholder="Fulan bin Fulan ..." class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-300" />
+            </div>
+            <div class="w-full">
+              <label class="flex items-center gap-2 font-semibold text-sm mb-1">
+                <span class="bg-pink-200 p-1 rounded">
+                  <img src="img/mail.png" alt="icon" />
+                </span>
+                Email
+              </label>
+              <input type="email" placeholder="Fulan@gmail.com ..." class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-pink-300" />
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div>
+            <label class="flex items-center gap-2 font-semibold text-sm mb-1">
+              <span class="bg-blue-200 p-1 rounded">
+                <img src="img/mess.png" alt="icon" />
+              </span>
+              Pesan
+            </label>
+            <textarea rows="4" placeholder="tung tung tung tung sahur ..." class="w-full px-4 py-2 border rounded resize-none focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="w-full py-2 font-semibold text-white bg-gradient-to-r from-orange-400 to-orange-500 hover:brightness-110 shadow-md rounded">
+            Kirim
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+    <footer class="bg-white border-t py-10">
+    <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+
+      <!-- Logo & Copyright -->
+      <div>
+        <div class="flex items-center gap-2 mb-2">
+          <img src="img/log.png" alt="logo" class="w-6 h-6" />
+          <span class="text-lg font-semibold text-gray-800">kodein<span class="text-orange-500">tekno</span></span>
+        </div>
+        <p class="text-sm text-gray-500">©2025 KodeinTekno | All rights reserved.</p>
+      </div>
+
+      <!-- Menu -->
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Menu</h4>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Kontak -->
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Kontak</h4>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li>+000-0000-0000</li>
+          <li>tekno@gmail.com</li>
+          <li>Harvest City,<br />Pagernunggul, Setu, Bekasi.</li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div>
+        <h4 class="font-semibold text-gray-800 mb-2">Social Media</h4>
+        <ul class="text-sm text-gray-600 space-y-1">
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </footer>
+
+
+
+  <!-- JavaScript to handle mobile menu toggle -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuToggle.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
